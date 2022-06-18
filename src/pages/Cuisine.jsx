@@ -13,7 +13,7 @@ const Cuisine = () => {
   }, [params.type]);
   const getCuisine = async (name) => {
     const response = await fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?apiKey=34840dacc43f44acbfdff713a64c8847&cuisine=${name}`
+      `https://api.spoonacular.com/recipes/complexSearch?apiKey=ca6400798c0e4acb9c43c7ca1f3fe6db&cuisine=${name}`
     );
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
