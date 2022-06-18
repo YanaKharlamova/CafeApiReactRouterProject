@@ -1,0 +1,17 @@
+/* You can, of course, maintain a separate CSS file that you include in your HTML via a <link> tag. */
+
+/* For v4:
+Use createGlobalStyle from Styled-components.
+
+import { createGlobalStyle } from 'styled-components' */
+
+/* const GlobalStyle = createGlobalStyle`
+  body {
+    color: ${props => (props.whiteColor ? 'white' : 'black')};
+  }
+` */
+
+/* <React.Fragment>
+  <GlobalStyle whiteColor />
+  <Navigation /> {/* example of other top-level stuff */
+/* </React.Fragment> */
