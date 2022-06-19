@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/CafeApiReactRouterProject/static/js/main.2bd6f655.chunk.js",
-    "main.js.map": "/CafeApiReactRouterProject/static/js/main.2bd6f655.chunk.js.map",
+    "main.js": "/CafeApiReactRouterProject/static/js/main.b592b64e.chunk.js",
+    "main.js.map": "/CafeApiReactRouterProject/static/js/main.b592b64e.chunk.js.map",
     "runtime~main.js": "/CafeApiReactRouterProject/static/js/runtime~main.304047a4.js",
     "runtime~main.js.map": "/CafeApiReactRouterProject/static/js/runtime~main.304047a4.js.map",
     "static/css/2.d68ba0e3.chunk.css": "/CafeApiReactRouterProject/static/css/2.d68ba0e3.chunk.css",
     "static/js/2.dc563be1.chunk.js": "/CafeApiReactRouterProject/static/js/2.dc563be1.chunk.js",
     "static/js/2.dc563be1.chunk.js.map": "/CafeApiReactRouterProject/static/js/2.dc563be1.chunk.js.map",
     "index.html": "/CafeApiReactRouterProject/index.html",
-    "precache-manifest.3d4686640ce83822058b6dabd1dbdcca.js": "/CafeApiReactRouterProject/precache-manifest.3d4686640ce83822058b6dabd1dbdcca.js",
+    "precache-manifest.6d5f8773a0e6b5259f069a8c516d804a.js": "/CafeApiReactRouterProject/precache-manifest.6d5f8773a0e6b5259f069a8c516d804a.js",
     "service-worker.js": "/CafeApiReactRouterProject/service-worker.js",
     "static/css/2.d68ba0e3.chunk.css.map": "/CafeApiReactRouterProject/static/css/2.d68ba0e3.chunk.css.map"
   }

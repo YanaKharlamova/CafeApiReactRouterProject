@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3de92a43f0a63e693438f0b34d6f0203",
+    "revision": "2059c09a222508f626d17661d2a693c9",
     "url": "/CafeApiReactRouterProject/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CafeApiReactRouterProject/static/js/2.dc563be1.chunk.js"
   },
   {
-    "revision": "d3e1be38665e482f421c",
-    "url": "/CafeApiReactRouterProject/static/js/main.2bd6f655.chunk.js"
+    "revision": "ee0ac41d82236d2cd9f6",
+    "url": "/CafeApiReactRouterProject/static/js/main.b592b64e.chunk.js"
   },
   {
     "revision": "fa7d8fef366ce3cdc564",
