@@ -16,7 +16,7 @@ const Popular = () => {
       setPopular(JSON.parse(check));
     } else {
       const response = await fetch(
-        `https://api.spoonacular.com/recipes/random?apiKey=ca6400798c0e4acb9c43c7ca1f3fe6db&number=9`
+        `https://api.spoonacular.com/recipes/random?apiKey=3a5d828b224a47b7aed891fe53578cb9&number=9`
       );
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
