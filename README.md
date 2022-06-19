@@ -21,22 +21,13 @@ In order to run this code, run this commands in your project terminal:
 **2)** `npm start` - to run the project.
 ## Screenshots:
 **1.**
-
+![reduxQuestions](https://user-images.githubusercontent.com/58036292/174498914-d340dc79-df3a-4028-b67b-ef30bbe43d8a.PNG)
 **2.**
-
-![](screenshots/screenshot2.PNG)
+![cafe3](https://user-images.githubusercontent.com/58036292/174499897-d4deaeaa-da0e-464f-a356-abaa47c3970d.png)
 **3.**
-
-![](screenshots/screenshot3.PNG)
+![cafe4](https://user-images.githubusercontent.com/58036292/174499900-3c153416-0747-42ac-905c-7b5b0b3cf488.png)
 **4.**
-
-![](screenshots/screenshot4.PNG)
+![cafe2](https://user-images.githubusercontent.com/58036292/174499903-35fe6448-5f3d-47d8-98e9-b4b7d07c9ba4.png)
 **5.**
+![cafe1](https://user-images.githubusercontent.com/58036292/174499901-76fd61d8-f692-4b80-8637-f7fd0f13aa04.png)
 
-![](screenshots/screenshot6.PNG)
-**6.**
-
-![](screenshots/screenshot5.PNG)
-**7.**
-
-![](screenshots/screenshot7.PNG)
