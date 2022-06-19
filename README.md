@@ -20,8 +20,6 @@ In order to run this code, run this commands in your project terminal:
 
 **2)** `npm start` - to run the project.
 ## Screenshots:
-**1.**
-![reduxQuestions](https://user-images.githubusercontent.com/58036292/174498914-d340dc79-df3a-4028-b67b-ef30bbe43d8a.PNG)
 **2.**
 ![cafe3](https://user-images.githubusercontent.com/58036292/174499897-d4deaeaa-da0e-464f-a356-abaa47c3970d.png)
 **3.**
