@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+// import "./App.css";
 import { createGlobalStyle } from "styled-components";
 import { Link } from "react-router-dom";
 import Search from "./components/Search";
@@ -25,7 +25,9 @@ function App() {
 const GlobalStyle = createGlobalStyle`
 html {
   box-sizing: border-box;
-  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+  font-size: 62.5%;
+  height:100%;
+  
 }
 * {
   margin: 0;
@@ -39,20 +41,21 @@ html {
 }
 body {
   background-color: beige;
+  background-attachment: fixed;
   font-family: "Prompt", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: #000;
   min-height: 100vh;
-  margin:0% 20%;
+  margin: 0% 20%;
 }
-h4{
-  font-size::1rem;
-  color:rgb(56,56,56);
+h4 {
+  font-size:1.2rem;
+  color:#000;
 }
-h3{
-  font-size::1.5rem;
-  color:rgb(56,56,56);
+h3 {
+  font-size:1.5rem;
+  color: #000;
   line-height:2.rem;
   margin:2rem 0rem;
 }
@@ -67,7 +70,7 @@ const Logo = styled(Link)`
   font-family: Georgia, serif;
 `;
 const Nav = styled.div`
-  padding: 4rem 0rem;
+  padding: 3rem 0rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;

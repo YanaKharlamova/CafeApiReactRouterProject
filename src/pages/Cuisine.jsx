@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-// import { motion } from "framer-motion";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -9,7 +8,6 @@ const Cuisine = () => {
   const params = useParams();
   useEffect(() => {
     getCuisine(params.type);
-    // console.log(params.type);
   }, [params.type]);
   const getCuisine = async (name) => {
     const response = await fetch(
@@ -45,12 +43,10 @@ const Grid = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
-  ${"" /* background-color:pink; */}
 `;
 const Card = styled.div`
   img {
     width: 100%;
-    ${"" /* max-width:5rem; */}
     border-radius: 2rem;
   }
   a {

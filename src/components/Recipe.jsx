@@ -5,8 +5,7 @@ import styled from "styled-components";
 const Recipe = () => {
   const params = useParams();
   const [recipe, setRecipe] = useState({});
-  const [activeTab, setActiveTab] = useState("instructions"); //show content
-  //dependent on clicked button(active btn)
+  const [activeTab, setActiveTab] = useState("instructions");
   useEffect(() => {
     const fetchSpecificApiData = async () => {
       const response = await fetch(
@@ -16,15 +15,10 @@ const Recipe = () => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const recipeData = await response.json();
-
       setRecipe(recipeData);
-      console.log(recipeData);
     };
     fetchSpecificApiData();
   }, [params.name]);
-
-  // console.log(params.name);
-
   return (
     <DetailWrapper>
       <div>
@@ -44,7 +38,6 @@ const Recipe = () => {
         >
           Ingredients
         </Button>
-        {/* <div> */}
         {activeTab === "instructions" && (
           <div>
             <h3 dangerouslySetInnerHTML={{ __html: recipe.summary }}></h3>
@@ -59,19 +52,18 @@ const Recipe = () => {
               })}
           </ul>
         )}
-
-        {/* </div> */}
       </Info>
     </DetailWrapper>
   );
 };
 const DetailWrapper = styled.div`
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   display: flex;
   .active {
-    background: blue;
+    background: #00204a;
     color: #fff;
+    border-color: #00204a;
   }
   img {
     max-width: 40rem;

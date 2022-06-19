@@ -3,9 +3,8 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
-//Splide- carousel; SplideSlide -each indiidual image in card
-//Link in order to open pop up with actual recipe
 import { Link } from "react-router-dom";
+
 const Veggie = () => {
   const [veggie, setVeggie] = useState([]);
   useEffect(() => {
@@ -23,7 +22,6 @@ const Veggie = () => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
-      // console.log(data);
       setVeggie(data.recipes);
     }
   };
@@ -33,7 +31,7 @@ const Veggie = () => {
         <h3>Vegetarian Picks</h3>
         <Splide
           options={{
-            perPage: 3, //3
+            perPage: 3,
             arrows: false,
             pagination: false,
             drag: "free",
@@ -71,11 +69,10 @@ const Card = styled.div`
   border-radius: 2rem;
     position: absolute;
     height: 100%;
-    ${"" /* not mine: */}
     width:100%;
     object-fit:cover;
   }
-  p{
+  p {
     position: absolute;
     z-index:10;
     left:50%;

@@ -1,4 +1,3 @@
-// import { Item } from "framer-motion/types/components/Reorder/Item";
 import React from "react";
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
@@ -8,9 +7,7 @@ const SearchedRecipes = () => {
   const [searchedRecipes, setSearchedRecipes] = useState([]);
   const params = useParams();
   useEffect(() => {
-    getSeachedRecipes(params.search); //that is now not "type" like it was in Cuisine
-    //but .search - like what we are serching in serach-field
-    console.log(params.search);
+    getSeachedRecipes(params.search);
   }, [params.search]);
   const getSeachedRecipes = async (name) => {
     const response = await fetch(
@@ -41,12 +38,10 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
-  ${"" /* background-color:pink; */}
 `;
 const Card = styled.div`
   img {
     width: 100%;
-    ${"" /* max-width:5rem; */}
     border-radius: 2rem;
   }
   a {

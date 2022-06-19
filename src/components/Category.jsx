@@ -1,34 +1,33 @@
 import React from "react";
 import { FaPizzaSlice, FaHamburger } from "react-icons/fa";
 import { GiNoodles, GiChopsticks } from "react-icons/gi";
+import { AiFillHeart } from "react-icons/ai";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 const Category = () => {
   return (
     <List>
-      {/* 1 */}
       <StyledLink to={"/cuisine/Italian"}>
         <FaPizzaSlice />
         <h4>Italian</h4>
       </StyledLink>
-      {/* 2 */}
       <StyledLink to={"/cuisine/American"}>
         <FaHamburger />
         <h4>American</h4>
       </StyledLink>
-      {/* 3 */}
       <StyledLink to={"/cuisine/Thai"}>
         <GiNoodles />
         <h4>Thai</h4>
       </StyledLink>
-      {/* 4 */}
       <StyledLink to={"/cuisine/Chinese"}>
         <GiChopsticks />
         <h4>Chinese</h4>
       </StyledLink>
-      {/* NavLink+styles=styledLink */}
-      {/* 2 */}
+      <StyledLink className="special" to={"/dailyspecial"}>
+        <AiFillHeart className="special-icon" />
+        <h4>Special</h4>
+      </StyledLink>
     </List>
   );
 };
@@ -60,11 +59,24 @@ const StyledLink = styled(NavLink)`
     color: #fff;
     font-size: 2.2rem;
     transform: translateX(19px);
+    &.special-icon {
+      color: #f10606;
+    }
   }
   &.active {
-    background: #00204a; //#235784;
+    background: #00204a;
+    &.special {
+      background: #e1dbdb;
+      border: 1px solid #d1c9c9;
+      h4 {
+        color: #000;
+      }
+    }
     svg {
       color: #f7aa00;
+      &.special-icon {
+        color: #f10606;
+      }
     }
     h4 {
       color: #eef5b2;

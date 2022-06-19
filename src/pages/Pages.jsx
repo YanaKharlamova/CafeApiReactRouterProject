@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./Home";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Cuisine from "./Cuisine";
+import DailySpecial from "./DailySpecial";
 import SearchedRecipes from "./SearchedRecipes";
 import Recipe from "../components/Recipe";
 import { AnimatePresence } from "framer-motion";
@@ -13,6 +14,7 @@ const Pages = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/cuisine/:type" element={<Cuisine />} />
+        <Route path="/dailyspecial" element={<DailySpecial />} />
         <Route path="/searched/:search" element={<SearchedRecipes />} />
         <Route path="/recipe/:name" element={<Recipe />} />
       </Routes>

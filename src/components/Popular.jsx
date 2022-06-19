@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
-//Splide- carousel; SplideSlide -each indiidual image in card
-//Link in order to open pop up with actual recipe
 import { Link } from "react-router-dom";
 
 const Popular = () => {
@@ -24,7 +22,6 @@ const Popular = () => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
-      // console.log(data);
       setPopular(data.recipes);
     }
   };
@@ -65,19 +62,18 @@ const Wrapper = styled.div`
   margin: 1rem 0rem;
 `;
 const Card = styled.div`
- min-height: 17rem;
- border-radius: 2rem;
- overflow:hidden;
- position:relative;
+  min-height: 17rem;
+  border-radius: 2rem;
+  overflow:hidden;
+  position:relative;
  img {
   border-radius: 2rem;
     position: absolute;
     height: 100%;
-    ${"" /* not mine: */}
-    width:100%;
-    object-fit:cover;
+    width: 100%;
+    object-fit: cover;
   }
-  p{
+  p {
     position: absolute;
     z-index:10;
     left:50%;
