@@ -9,7 +9,7 @@ const Recipe = () => {
   useEffect(() => {
     const fetchSpecificApiData = async () => {
       const response = await fetch(
-        `https://api.spoonacular.com/recipes/${params.name}/information?apiKey=3a5d828b224a47b7aed891fe53578cb9`
+        `https://api.spoonacular.com/recipes/${params.name}/information?apiKey=3278c7eb79594834978315606f32f5e7`
       );
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
