@@ -16,7 +16,7 @@ const Veggie = () => {
       setVeggie(JSON.parse(check));
     } else {
       const response = await fetch(
-        `https://api.spoonacular.com/recipes/random?apiKey=3278c7eb79594834978315606f32f5e7&number=12&tags=vegetarian`
+        `https://api.spoonacular.com/recipes/random?apiKey=a66850fc50a240e6a011344745209308&number=12&tags=vegetarian`
       );
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);

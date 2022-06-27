@@ -11,7 +11,7 @@ const SearchedRecipes = () => {
   }, [params.search]);
   const getSeachedRecipes = async (name) => {
     const response = await fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?apiKey=3278c7eb79594834978315606f32f5e7&query=${name}`
+      `https://api.spoonacular.com/recipes/complexSearch?apiKey=a66850fc50a240e6a011344745209308&query=${name}`
     );
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);

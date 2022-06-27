@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { BsStars } from "react-icons/bs";
 
-const Recipe = () => {
+const DailySpecial = () => {
   const [specialRecipe, setSpecialRecipe] = useState({});
   useEffect(() => {
     const fetchSpecificApiData = async () => {
       const response = await fetch(
-        `https://api.spoonacular.com/recipes/random?apiKey=3278c7eb79594834978315606f32f5e7&number=1`
+        `https://api.spoonacular.com/recipes/random?apiKey=a66850fc50a240e6a011344745209308&number=1`
       );
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -87,4 +87,4 @@ const Info = styled.div`
     text-align: center;
   }
 `;
-export default Recipe;
+export default DailySpecial;
